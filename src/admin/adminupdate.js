@@ -9,8 +9,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 function AdminUpdateCard() { 
     const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [adminId, setAdminId] = useState(1); // default admin ID
-  const [message, setMessage] = useState('');
+  
+  
 
   const handleUpdate = async () => {
     try {
