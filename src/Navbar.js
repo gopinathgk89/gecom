@@ -1,6 +1,6 @@
 import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { Link, NavLink, useLocation } from "react-router-dom"; 
+import {  NavLink, useLocation } from "react-router-dom"; 
 import { useNavigate } from "react-router-dom"; 
 import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
@@ -11,7 +11,6 @@ import Dropdown from 'react-bootstrap/Dropdown';
 function Navbar({ setSearchTerm }) {
 
   const [input, setInput] = useState('');
-  const [marqueeText, setMarqueeText] = useState('');
   const navigate = useNavigate();
   const location = useLocation();
 
