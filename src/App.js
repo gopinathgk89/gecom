@@ -27,7 +27,7 @@ import BannerUpdatePage from "./admin/banner.js";
 import CategoryManager from "./admin/addcategory.js";
 import React, { useState } from 'react';
 import CheckoutPage from "./checkoutpage.js";
-import { CartProvider } from './CartContext';
+
 
 import PrivateRoute from "./admin/PrivateRoute";
   
