@@ -1,9 +1,5 @@
 import React from "react";
 import './App.css';
-import baner1 from "./baner1.JPG";  
-import baner2 from "./baner2.JPG";
-import baner3 from "./baner3.JPG";
-import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
   
    
