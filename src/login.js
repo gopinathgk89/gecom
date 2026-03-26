@@ -53,7 +53,7 @@ function Login() {
           </div>
 
           <div className="mb-3 text-end">
-            <a href="#" className="text-decoration-none">Forgot Password?</a>
+            <a className="text-decoration-none">Forgot Password?</a>
           </div>
 
           <div className="d-grid mb-3">
