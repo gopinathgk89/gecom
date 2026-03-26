@@ -1,0 +1,89 @@
+/* snavbar.css */
+
+.navbar {
+  width: 100%;
+  position: relative;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color:white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hi-name {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.filter-btn,
+.logout-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.logout-btn:hover {
+  background-color: #666;
+}
+
+.filter-section {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-option label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.filter-option select,
+.filter-option input[type="range"] {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .navbar-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hi-name {
+    margin-bottom: 8px;
+  }
+
+  .filter-btn,
+  .logout-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .filter-section {
+    width: 100%;
+  }
+}

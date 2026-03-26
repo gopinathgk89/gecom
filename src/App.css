@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: white; /* Light orange background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:24px 20px;
+  height:90px ;  
+
+  position: sticky;
+  top:0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b35000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  right: 90px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #b35000;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+       
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color:white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.top-message {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 16px;
+}  
+.carousel-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.product-card{
+      background-color: #f8f9fa; /* off-white */
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      width: 300px;
+      height: 300px;
+      display: flex;
+    }
+
+
+  .best-products-title {
+  display: inline-block;
+  border-bottom: 3px solid orange;
+  padding-bottom: 5px;
+}
+
+.product-img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.product-card {
+  border-radius: 10px;
+
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.bicart{
+  position: relative;
+  right: 40px;
+  display: inline-block;
+}
+ 
+@media screen and (max-width:768px) {
+.bicart{ 
+   position: relative;
+   right:4px;
+}
+#shop{
+  overflow-x: hidden;
+}
+#cartpage{
+  display: inline-block;
+
+}
+#column{
+   
+  display: flex;
+}
+}
+
+.btn-brown {
+  background-color: #5d3b23;       
+  color: white;
+  border: none;          
+}
+
+.btn-brown:hover {
+  background-color: #442a18; 
+  color: white;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+#checkout:hover{
+ cursor: pointer;
+ background-color: black;
+ color: white;
+ transition: 1s;
+}
+/* Sidebar styles for mobile filter */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1050;
+  transition: right 0.3s ease-in-out;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+}
+.mobile-sidebar.show {
+  right: 0;
+}
+
+/* Backdrop when sidebar is open */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  z-index: 1040;
+}
+
